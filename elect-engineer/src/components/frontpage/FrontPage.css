@@ -1,0 +1,117 @@
+.nav-container {
+    background: black;
+    background-image: url("../../img/pic11.png");
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 100px; */
+    padding: 30px;
+    /* background: black; */
+}
+
+.logo > ul > li {
+    font-family: 'Clash Display', sans-serif;
+    list-style: none;
+    font-size: 40px;
+    line-height: 48.41px;
+    height: 50px;
+    color: bisque;
+    text-transform: capitalize;
+}
+
+.links > ul {
+    display: flex;
+    gap: 64px;
+}
+
+.links > ul > li {
+    list-style: none;
+    font-family: 'Clash Display', sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.btn1 > button {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: bisque;
+    width: 187px;
+    height: 48px;
+    padding: 10px, 20px, 10px, 20px;
+    border-radius: 8px;
+    border: 2px solid bisque;
+    font-family: sans-serif;
+}
+
+.btn1 > button:hover {
+    background: white;
+}
+
+.nav-text {
+    margin-top: 70px;
+    padding-bottom: 130px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-about > span:nth-of-type(1) {
+    color: aliceblue;
+    font-size: 56px;
+    line-height: 67.77px;
+    width: 664px;
+}
+
+.text-about > span:nth-of-type(2) {
+    color: #6ACFC7;
+    width: 630px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.btn2 > button {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: bisque;
+    width: 187px;
+    height: 48px;
+    padding: 10px, 20px, 10px, 20px;
+    border-radius: 8px;
+    border: 2px solid bisque;
+    font-family: sans-serif;
+}
+
+.btn2 > button:hover {
+    background: white;
+}
+
+.nav-text-img > img {
+    width: 352px;
+    height: 352px;
+    border: 1px solid #6ACFC7;
+    border-radius: 1000px;
+}
+
+@media screen and (max-width: 1200px) {
+    .links > ul {
+        display: flex;
+        gap: 34px;
+    }
+}
