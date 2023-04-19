@@ -1,0 +1,30 @@
+.logo-cont {
+    background-image: url("..//img/pic16.jpg");
+    height: 20%;
+    width: 350px;
+    border-radius: 50px;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.logo-cont > span {
+    font-size: 40px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 10px;
+    color: rgb(144, 139, 136);
+    /* font-family: 'Bespoke Stencil', sans-serif; */
+    font-family: 'Sharpie', sans-serif;
+}
+
+/* .logo-cont > span:nth-of-type(2) {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 10px;
+    color: bisque;
+    font-family: 'Sharpie', sans-serif;
+} */

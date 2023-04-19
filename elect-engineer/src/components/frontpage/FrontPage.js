@@ -1,6 +1,7 @@
  import React from "react";
  import "./FrontPage.css";
  import pic3 from "../../img/pic3.jpg";
+import Service from "../services/Service";
 
  const FrontPage = () => {
     return (
@@ -47,6 +48,7 @@
                     </div>
                 </div>
             </div>
+            <Service />
         </>
     )
  }
