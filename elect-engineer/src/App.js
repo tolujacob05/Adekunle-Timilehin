@@ -1,15 +1,22 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FrontPage from "./components/frontpage/FrontPage";
 import Service from "./components/services/Service";
+import Onboard from "./components/onboard/Onboard";
 
 const App = () => {
   return (
     <>
-      <div>
-        <FrontPage />
-        <Service />
-      </div>
+      <Router>
+        <div>
+          <Routes>
+            <Route exact path="/" element={<Onboard />} />
+            <Route path="/frontpage" element={<FrontPage />} />
+            {/* <Route path="/services" element={<Service />} /> */}
+          </Routes>
+        </div>
+      </Router>
     </>
   )
 }
