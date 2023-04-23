@@ -5,7 +5,7 @@ import { easeIn, motion } from "framer-motion";
 const loaderVariants = {
     animateOne: {
         x: [-20, 20],
-        y: [0, -30],
+        y: [10, -30],
         transition: {
             x: {
                 yoyo: Infinity,

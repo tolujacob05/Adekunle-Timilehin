@@ -33,7 +33,7 @@ const Service = () => {
                     <div className="types">
                         <img src={pic13} alt="" />
                         <span>
-                            House wiring
+                            Solar installation
                         </span>
                         <span>
                             We offer wiring serivices for homes, schools, offices, business organizations e.t.c.
@@ -46,11 +46,11 @@ const Service = () => {
                     <div className="types">
                         <img src={pic14} alt="" />
                         <span>
-                            House wiring
+                            Supply of electrical and solar parts
                         </span>
                         <span>
-                            We offer wiring serivices for homes, schools, offices, business organizations e.t.c.
-                            Just name it and we will make our services available.
+                            We supply parts of various parts of electrical and solar accessories we install for customers and 
+                            and non customers.
                         </span>
                     </div>
                 </div>

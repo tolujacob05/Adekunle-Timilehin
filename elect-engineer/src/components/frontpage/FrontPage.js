@@ -2,6 +2,8 @@
  import "./FrontPage.css";
  import pic3 from "../../img/pic3.jpg";
 import Service from "../services/Service";
+import Logo from "../../logo/Logo";
+import About from "../about/About";
 
  const FrontPage = () => {
     return (
@@ -9,23 +11,22 @@ import Service from "../services/Service";
             <div className="nav-container">
                 <nav>
                     <div className="logo">
-                        <ul>
-                            <li>
-                                timi-electrical
-                            </li>
-                        </ul>
+                            <Logo />
                     </div>
-                    <div className="links">
-                        <ul>
-                            <li>Home</li>
-                            <li>projects</li>
-                            <li>contact us</li>
-                            <li>about us</li>
-                        </ul>
+                    <div className="nav-logo">
+                        <div className="links">
+                            <ul>
+                                <li>Home</li>
+                                <li>projects</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                            </ul>
+                        </div>
+                        <div className="btn1">
+                            <button>request service</button>
+                        </div>
                     </div>
-                    <div className="btn1">
-                        <button>request service</button>
-                    </div>
+                    
                 </nav>
 
                 {/* Brief intro on what the company is about  */}
@@ -48,7 +49,11 @@ import Service from "../services/Service";
                     </div>
                 </div>
             </div>
-            <Service />
+            <div>
+                <About />
+                <Service />
+            </div>
+
         </>
     )
  }
