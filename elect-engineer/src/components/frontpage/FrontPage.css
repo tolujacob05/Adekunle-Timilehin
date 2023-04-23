@@ -1,18 +1,25 @@
 .nav-container {
     background: black;
     background-image: url("../../img/pic11.png");
+    margin-bottom: 10rem;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* gap: 100px; */
+    /* justify-content: space-around; */
+    gap: 100px;
     padding: 30px;
     /* background: black; */
 }
 
-.logo > ul > li {
+.nav-logo {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.links > ul > li {
     font-family: 'Clash Display', sans-serif;
     list-style: none;
     font-size: 40px;

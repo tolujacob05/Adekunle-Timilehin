@@ -1,5 +1,6 @@
 .onboard-container {
     position: relative;
+    overflow: hidden;
 }
 
 .vid {
@@ -24,9 +25,61 @@
     object-fit: fill;
 }
 
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timi {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 20rem;
+}
+
+/* .timi > span:nth-of-type(1) {
+    font-size: 5rem;
+    font-family: 'Sharpie', sans-serif;
+    text-transform: capitalize;
+    color: rgb(144, 139, 136);
+} */
+
+.timi > span {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 600;
+    border: 1px solid white;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #000000;
+}
+
+.text p {
+    position: absolute;
+    top: 25rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: rgb(215, 116, 98);
+}
+
+/* .logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .yoyo {
     position: absolute;
-    top: 3%;
+    top: 10%;
 }
 
 .btn3 {
@@ -39,15 +92,25 @@
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
-    background: bisque;
+    background: rgb(215, 116, 98);;
     width: 187px;
     height: 48px;
     padding: 10px, 20px, 10px, 20px;
     border-radius: 8px;
-    border: 2px solid bisque;
+    border: 2px solid rgb(215, 116, 98);;
     font-family: sans-serif;
 }
 
 .btn3 > button:hover {
     background: white;
+}
+
+@media screen and (max-width: 1200px) {
+    /* .timi > span:nth-of-type(1) {
+        font-size: 3rem;
+    } */
+
+    .timi > span {
+        font-size: 1rem;
+    }
 }
