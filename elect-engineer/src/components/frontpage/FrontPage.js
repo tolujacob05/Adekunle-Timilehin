@@ -1,11 +1,17 @@
- import React from "react";
+ import { React, useState } from "react";
  import "./FrontPage.css";
  import pic3 from "../../img/pic3.jpg";
 import Service from "../services/Service";
 import Logo from "../../logo/Logo";
 import About from "../about/About";
+import Project from "../projects/Project";
+import Popup1 from "../../modal/Popup1";
+import Footer from "../footer/Footer";
 
  const FrontPage = () => {
+    const [ openModal, setOpenModal ] = useState(false);
+
+
     return (
         <>
             <div className="nav-container">
@@ -23,7 +29,8 @@ import About from "../about/About";
                             </ul>
                         </div>
                         <div className="btn1">
-                            <button>request service</button>
+                            <button onClick={() => setOpenModal(true)}>request service</button>
+                            <Popup1  open={openModal} onClose={() => setOpenModal(false)}/>
                         </div>
                     </div>
                     
@@ -40,9 +47,9 @@ import About from "../about/About";
                                 We make sure we do our possible best there is to satisfy our customers
                             </span>
                         </div>
-                        <div className="btn2">
+                        {/* <div className="btn2">
                             <button>explore</button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="nav-text-img">
                         <img src={pic3} alt="" />
@@ -52,6 +59,8 @@ import About from "../about/About";
             <div>
                 <About />
                 <Service />
+                <Project />
+                <Footer />
             </div>
 
         </>

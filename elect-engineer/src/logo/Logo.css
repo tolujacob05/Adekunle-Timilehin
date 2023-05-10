@@ -72,3 +72,24 @@
 @media screen and (max-width: 1200px) {
     
 }
+
+@media screen and (max-width: 500px) {
+
+    .logo-img > img {
+        width: 40px;
+    }
+
+    .logo-name > span {
+        font-size: 1rem;
+    }
+
+    .logo-vector > img {
+        transform: translateX(-9.5px);
+        width: 40px;
+    }
+
+    .logo-text > span {
+        right: 11.5rem;
+        font-size: 1rem;
+    }
+}

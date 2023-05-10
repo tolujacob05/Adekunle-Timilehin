@@ -16,3 +16,16 @@
     border-radius: 50px;
     opacity: .3;
 }
+
+@media screen and (max-width: 500px) {
+
+    .columns-dots {
+        display: grid;
+        gap: 5px;
+    }
+
+    .dotss {
+        width: 8.46px;
+        height: 8.24px;
+    }
+}
