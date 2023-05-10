@@ -1,0 +1,94 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #0D1C1C;
+    align-items: center;
+    padding: 2rem;
+    height: 20rem;
+}
+
+.footer-contact > span {
+    font-size: 30px;
+    color: aliceblue;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+.footer-address {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-address > span {
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.footer-address > span:nth-of-type(1) {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: bisque;
+}
+
+/* .footer-address > span:nth-of-type(2) {
+    color: #646464;
+} */
+
+.footer-address > span:nth-of-type(3) {
+    width: 100px;
+}
+
+.footer-phone {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-phone > span {
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.footer-phone > span:nth-of-type(1) {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: bisque;
+}
+
+.footer-mail {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-mail > span {
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.footer-mail > span:nth-of-type(1) {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: bisque;
+}
+
+.footer-service > span {
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.footer-service > ul > li {
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: aliceblue;
+}

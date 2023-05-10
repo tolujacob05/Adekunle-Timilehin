@@ -1,0 +1,118 @@
+.pr-head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pr-head > span:nth-of-type(1) {
+    font-size: 40px;
+    line-height: 48.41px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    margin-bottom: 4rem;
+}
+
+.pr-head > span:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 48.41px;
+    color: #000000;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    margin-bottom: 4rem;
+    width: 850px;
+}
+
+.pr-head > span:nth-of-type(3) {
+    font-size: 40px;
+    line-height: 48.41px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.pr-work {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid bisque;
+    background: bisque;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.pr1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pr1 > span:nth-of-type(1) {
+    font-size: 20px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pr1 > span:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.pr1 > span:nth-of-type(3) {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    border: 1px solid #6ACFC7;
+    background: #6ACFC7;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.pr1 > span:nth-of-type(3):hover {
+    background: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .pr-head > span:nth-of-type(2) {
+        font-size: 16px;
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pr-head > span:nth-of-type(2) {
+        font-size: 16px;
+        width: 250px;
+    }
+
+    .pr-img > img {
+        width: 155px;
+        height: 155px;
+    }
+    
+    .pr-img2 > img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .pr-work {
+        width: 250px;
+        gap: 1rem;
+        transform: translateX(-45px);
+    }
+
+    .pr1 > span:nth-of-type(2) {
+        font-size: 14px;
+    }
+    
+}

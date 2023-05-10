@@ -22,7 +22,7 @@ nav {
 .links > ul > li {
     font-family: 'Clash Display', sans-serif;
     list-style: none;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 48.41px;
     height: 50px;
     color: bisque;
@@ -34,13 +34,13 @@ nav {
     gap: 64px;
 }
 
-.links > ul > li {
+/* .links > ul > li {
     list-style: none;
     font-family: 'Clash Display', sans-serif;
     text-transform: capitalize;
     font-size: 16px;
     color: aliceblue;
-}
+} */
 
 .btn1 > button {
     font-size: 16px;
@@ -63,7 +63,8 @@ nav {
     margin-top: 70px;
     padding-bottom: 130px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 }
 
 .text {
@@ -92,7 +93,13 @@ nav {
     line-height: 24px;
 }
 
-.btn2 > button {
+/* .btn2 {
+    position: absolute;
+    bottom: 120px;
+    left: 8px;
+} */
+
+/* .btn2 > button {
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
@@ -107,7 +114,7 @@ nav {
 
 .btn2 > button:hover {
     background: white;
-}
+} */
 
 .nav-text-img > img {
     width: 352px;
@@ -120,5 +127,68 @@ nav {
     .links > ul {
         display: flex;
         gap: 34px;
+    }
+
+    .nav-text {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    .text-about > span:nth-of-type(1) {
+        color: aliceblue;
+        font-size: 26px;
+        line-height: 67.77px;
+        width: 444px;
+    }
+
+    .text-about > span:nth-of-type(2) {
+        color: #6ACFC7;
+        width: 330px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .nav-text-img > img {
+        width: 252px;
+        height: 252px;
+        border: 1px solid #6ACFC7;
+        border-radius: 1000px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .nav-text {
+        justify-content: center;
+        gap: 1px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .text-about > span:nth-of-type(1) {
+        color: aliceblue;
+        font-size: 16px;
+        line-height: 27.77px;
+        width: 204px;
+    }
+
+    .text-about > span:nth-of-type(2) {
+        width: 230px;
+        font-size: 12px;
+    }
+
+    .nav-text-img {
+        position: absolute;
+        top: 140px;
+        right: 30px;
+        /* transform: translateY( -26rem); */
+    }
+
+    .nav-text-img > img {
+        width: 132px;
+        height: 132px;
+        /* transform: translateX(12rem); */
     }
 }

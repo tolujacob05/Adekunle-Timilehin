@@ -6,6 +6,7 @@ import pic19 from "../../img/pic19.png"
 import Dots from "../Dots/Dots";
 import vector2 from "../../img/vector2.png";
 import pic20 from "../../img/pic20.png";
+import { UilCheck } from '@iconscout/react-unicons'
 
 const About = () => {
     return (
@@ -31,7 +32,7 @@ const About = () => {
                             </div>
                             <div className="abt-exp-cont">
                                 <div className="abt-exp">
-                                    <span>15</span>
+                                    <span>13</span>
                                     <span>years</span>
                                     <div className="abt-exp2">
                                         <span>Experience in the electrical field</span>
@@ -65,6 +66,24 @@ const About = () => {
                                     <img src={pic20} alt="" />
                                 </div>
                                 <span>rewiring and check up</span>
+                            </div>
+                        </div>
+                        <div className="abt-info2">
+                            <div className="abt-icons">
+                                <UilCheck />
+                                <UilCheck />
+                                <UilCheck />
+                                <UilCheck />
+                            </div>
+                            <div className="abt-check">
+                                <span>Available at hours of the day to respond to 
+                                    all your electrical needs.
+                                </span>
+                                <span>Electrical repairs, installations, upgrades
+                                    and maintainance services.
+                                </span>
+                                <span>High standards of safety, quality, and professionalism.</span>
+                                <span>Provision of exceptional customer service.</span>
                             </div>
                         </div>
                     </div>
