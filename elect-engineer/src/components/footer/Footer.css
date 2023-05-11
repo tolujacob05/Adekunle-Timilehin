@@ -102,6 +102,14 @@ footer {
         padding: 5rem;
     }
 
+    .footer-service > span {
+        font-size: 20px;
+    }
+
+    .footer-service > ul > li {
+        font-size: 14px;
+    }
+
     /* .footer-contact > span {
         font-size: 20px;
     } */
@@ -110,11 +118,20 @@ footer {
 @media screen and (max-width: 1200px) {
     footer {
         display: flex;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 1rem;
         padding: 5rem;
     }
 
-    /* .footer-contact > span {
+    .footer-contact > span {
         font-size: 20px;
-    } */
+    }
+
+    .footer-address > span {
+        font-size: 14px;
+    }
+
+    .footer-service > span {
+        font-size: 20px;
+    }
 }

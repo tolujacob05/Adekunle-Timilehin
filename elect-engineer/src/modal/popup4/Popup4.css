@@ -1,5 +1,5 @@
 .pop4 {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, .8);
     width: 70%;
     height: 100%;
     margin: 20px;
@@ -12,7 +12,10 @@
 
 .pop4 > span:nth-of-type(1) {
     color: red;
-    transform: translateX(58rem);
+    /* transform: translateX(58rem); */
+    position: fixed;
+    top: 8px;
+    right: 8px;
     font-size: 30px;
     cursor: pointer;
 }
@@ -41,8 +44,12 @@
 
     .pop4 > span:nth-of-type(1) {
         color: red;
-        transform: translateX(28rem);
+        /* transform: translateX(28rem); */
         font-size: 30px;
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        font-family: 'Sharpie', sans-serif;
     }
     
     /* .pop-img2 > img {
@@ -65,7 +72,11 @@
     }
 
     .pop4 > span:nth-of-type(1) {
-        transform: translateX(12rem);
+        /* transform: translateX(12rem);s */
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        font-size: 16px;
     }
     
     /* .pop-img2 > img {

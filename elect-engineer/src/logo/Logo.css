@@ -60,7 +60,7 @@
 .logo-text > span {
     position: absolute;
     color: #6ACFC7;
-    right: -0.5rem;
+    right: -2.5rem;
     /* top: 5rem; */
     font-size: 2.5rem;
     transform: translateY(30px);
@@ -70,7 +70,14 @@
 
 
 @media screen and (max-width: 1200px) {
-    
+    .logo-name > span {
+        font-size: 2rem;
+    }
+
+    .logo-text > span {
+        right: 0.8rem;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
