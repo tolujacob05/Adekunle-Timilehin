@@ -45,7 +45,7 @@ import { Link } from "react-scroll";
                                 <button onClick={() => setOpenModal(true)}>request service</button>
                             </ul>
 
-                            <Popup1 open={openModal} onClose={() => setOpenModal(false)}/>
+                            
                         </div>
 
                         <div
@@ -61,7 +61,7 @@ import { Link } from "react-scroll";
                         }
                         </div>
                     </div>
-                    
+                    <Popup1 open={openModal} onClose={() => setOpenModal(false)}/>
                 </nav>
 
                 {/* Brief intro on what the company is about  */}
