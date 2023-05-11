@@ -1,5 +1,5 @@
 .pop-container {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -28,7 +28,8 @@
 }
 
 .main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     /* padding: 8rem; */
@@ -59,7 +60,7 @@
     /* justify-content: center; */
     width: 70%;
     /* height: 8rem; */
-    transform: translate(10%, 30%);
+    transform: translate(25%, 10%);
     grid-gap: 2rem;
     /* margin: 5rem; */
 }
@@ -72,11 +73,23 @@
     background: bisque;
 }
 
-.message > input:nth-child(4) {
+/* .message > input:nth-child(4) {
+    font-size: 16px;
+} */
+
+.message > textarea {
     grid-column: span 3;
     height: 8rem;
     border-radius: 10px;
     background: bisque;
+}
+
+.message > textarea::placeholder {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: black;
 }
 
 input::placeholder {
@@ -87,8 +100,8 @@ input::placeholder {
 
 .btn6 {
     position: absolute;
-    bottom: 8px;
-    right: 8px;
+    bottom: -9rem;
+    transform: translateX(25rem);
     padding: 10px;
     margin: 10px;
 }
@@ -107,6 +120,35 @@ input::placeholder {
 .btn6 > button:hover {
     background: white;
 }
+
+.pop-msg > span {
+    color: aliceblue;
+    font-size: 16px;
+    width: 350px;
+    display: flex;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1150px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .message {
+        width: 60%;
+        transform: translate(20%, 10%);
+    }
+
+    .btn6 {
+        position: absolute;
+        bottom: -8.5rem;
+        transform: translateX(10rem);
+    }
+} 
 
 @media screen and (max-width: 500px) {
     .main {
@@ -137,8 +179,29 @@ input::placeholder {
         transform: translate(32%, 10%);
     }
 
-    .message > input:nth-child(4) {
+    .message > textarea {
         grid-column: span 3;
         height: 6rem;
+        overflow: hidden;
+    }
+
+    .btn6 {
+        position: absolute;
+        bottom: -8rem;
+        transform: translateX(3rem);
+    }
+
+    .btn6 > button {
+        width: 6rem;
+        height: 3rem;
+        background: tomato;
+        font-size: 12px;
+    }
+
+    .pop-msg > span {
+        color: aliceblue;
+        font-size: 10px;
+        display: flex;
+        width: 150px;
     }
 }

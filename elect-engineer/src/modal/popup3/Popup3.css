@@ -1,5 +1,5 @@
 .pop3 {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, .8);
     width: 80%;
     height: 100%;
     display: grid;
@@ -12,9 +12,13 @@
 
 .pop3 > span:nth-of-type(1) {
     color: red;
-    transform: translateX(64rem);
+    /* transform: translateX(65rem); */
+    position: fixed;
+    top: 8px;
+    right: 8px;
     font-size: 30px;
     cursor: pointer;
+    font-family: 'Sharpie', sans-serif;
 }
 
 .pop3-img {
@@ -36,8 +40,11 @@
 
     .pop3 > span:nth-of-type(1) {
         color: red;
-        transform: translateX(32rem);
+        /* transform: translateX(32rem); */
         font-size: 30px;
+        position: fixed;
+        top: 8px;
+        right: 8px;
     }
 }
 
@@ -55,6 +62,10 @@
     }
 
     .pop3 > span:nth-of-type(1) {
-        transform: translateX(13rem);
+        /* transform: translateX(13rem); */
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        font-size: 16px;
     }
 }

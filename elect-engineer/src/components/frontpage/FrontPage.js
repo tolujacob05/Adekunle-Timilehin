@@ -29,16 +29,16 @@ import { Link } from "react-scroll";
                             onClick={() => setIsMobile(false)}
                         >
                             <ul className="links">
-                                <Link activeClass="active" to="Home" spy={true} smooth={true}>
+                                <Link activeClass="active" to="Home" spy={true} smooth={true} className="logo-link">
                                     <li>Home</li>
                                 </Link>
-                                <Link activeClass="active" to="Projects" spy={true} smooth={true}>
+                                <Link activeClass="active" to="Projects" spy={true} smooth={true} className="logo-link">
                                     <li>projects</li>
                                 </Link>
-                                <Link activeClass="active" to="Contact us" spy={true} smooth={true}>
+                                <Link activeClass="active" to="Contact us" spy={true} smooth={true} className="logo-link">
                                     <li>contact us</li>
                                 </Link>
-                                <Link activeClass="active" to="About us" spy={true} smooth={true}>
+                                <Link activeClass="active" to="About us" spy={true} smooth={true} className="logo-link">
                                     <li>About us</li>
                                 </Link>
         
