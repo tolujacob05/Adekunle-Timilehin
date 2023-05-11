@@ -19,7 +19,7 @@ nav {
     align-items: center;
 }
 
-.links > ul > li {
+.links > li {
     font-family: 'Clash Display', sans-serif;
     list-style: none;
     font-size: 20px;
@@ -29,7 +29,7 @@ nav {
     text-transform: capitalize;
 }
 
-.links > ul {
+.links {
     display: flex;
     gap: 64px;
 }
@@ -42,7 +42,7 @@ nav {
     color: aliceblue;
 } */
 
-.btn1 > button {
+.links > button {
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
@@ -55,7 +55,7 @@ nav {
     font-family: sans-serif;
 }
 
-.btn1 > button:hover {
+.links > button:hover {
     background: white;
 }
 
@@ -123,10 +123,15 @@ nav {
     border-radius: 1000px;
 }
 
+.mobile-menu-icon {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
-    .links > ul {
+    .links {
         display: flex;
-        gap: 34px;
+        /* flex-direction: column; */
+        gap: 1px;
     }
 
     .nav-text {
@@ -154,6 +159,48 @@ nav {
         height: 252px;
         border: 1px solid #6ACFC7;
         border-radius: 1000px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    /* .lists > li {
+        display: none;
+    } */
+
+    .links-mobile {
+        display: grid;
+    }
+
+    .links-mobile > ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background: #FFFFFF;
+        right: 12px;
+        top: 19px;
+        width: 30%;
+        height: 45%;
+    }
+
+    .links-mobile > ul >li {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        color: tomato;
+        background: #FFFFFF;
+        top: 35px;
+        right: 15px;
+        z-index: 9;
+        /* width: 58px;
+        height: 30px; */
+        /* border: none; */
     }
 }
 
@@ -190,5 +237,24 @@ nav {
         width: 132px;
         height: 132px;
         /* transform: translateX(12rem); */
+    }
+
+    .links-mobile > ul {
+        width: 30%;
+        height: 55%;
+        z-index: 9;
+    }
+
+    .links-mobile > ul >li {
+        font-size: 16px;
+        padding: 20px;
+        width: 100px;
+        transform: translateX(-2rem);
+    }
+
+    .links > button {
+        font-size: 16px;
+        width: 127px;
+        transform: translateX(-2rem);
     }
 }

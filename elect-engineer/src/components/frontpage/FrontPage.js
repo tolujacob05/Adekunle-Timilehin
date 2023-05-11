@@ -5,12 +5,15 @@ import Service from "../services/Service";
 import Logo from "../../logo/Logo";
 import About from "../about/About";
 import Project from "../projects/Project";
-import Popup1 from "../../modal/Popup1";
+import Popup1 from "../../modal/popup1/Popup1";
 import Footer from "../footer/Footer";
+import { UilAlignCenterAlt } from '@iconscout/react-unicons';
+import { UilTimesCircle } from '@iconscout/react-unicons';
 
  const FrontPage = () => {
     const [ openModal, setOpenModal ] = useState(false);
 
+    const [ isMobile, setIsMobile ] = useState(false);
 
     return (
         <>
@@ -20,17 +23,36 @@ import Footer from "../footer/Footer";
                             <Logo />
                     </div>
                     <div className="nav-logo">
-                        <div className="links">
-                            <ul>
+                        <div  
+                            className={ isMobile? "links-mobile":"links"}
+                            onClick={() => setIsMobile(false)}
+                        >
+                            <ul className="links">
                                 <li>Home</li>
                                 <li>projects</li>
                                 <li>contact us</li>
                                 <li>about us</li>
+        
+                                <button onClick={() => setOpenModal(true)}>request service</button>
+                                <Popup1 open={openModal} onClose={() => setOpenModal(false)}/>
                             </ul>
+
+                            {/* <div className="btn1">
+                                
+                            </div> */}
                         </div>
-                        <div className="btn1">
-                            <button onClick={() => setOpenModal(true)}>request service</button>
-                            <Popup1  open={openModal} onClose={() => setOpenModal(false)}/>
+
+                        <div
+                            className="mobile-menu-icon"
+                            onClick={() => setIsMobile(!isMobile)}
+                        >
+                        { isMobile ?
+                            (  
+                                <UilTimesCircle />
+                            ): (
+                                <UilAlignCenterAlt />
+                            )
+                        }
                         </div>
                     </div>
                     
@@ -56,6 +78,10 @@ import Footer from "../footer/Footer";
                     </div>
                 </div>
             </div>
+            {/* <div className="mobile-screen" id="mobile">
+                <UilAlignCenterAlt />
+                <UilTimesCircle />
+            </div> */}
             <div>
                 <About />
                 <Service />
