@@ -19,7 +19,7 @@ const Project = () => {
 
     return (
         <>
-            <section className="project-section">
+            <section className="project-section" id="Projects">
                 <div className="pr-head">
                     <span>some of our works</span>
                     <span>Along the years since operation, starting from small commercial building

@@ -9,6 +9,7 @@ import Popup1 from "../../modal/popup1/Popup1";
 import Footer from "../footer/Footer";
 import { UilAlignCenterAlt } from '@iconscout/react-unicons';
 import { UilTimesCircle } from '@iconscout/react-unicons';
+import { Link } from "react-scroll";
 
  const FrontPage = () => {
     const [ openModal, setOpenModal ] = useState(false);
@@ -28,18 +29,23 @@ import { UilTimesCircle } from '@iconscout/react-unicons';
                             onClick={() => setIsMobile(false)}
                         >
                             <ul className="links">
-                                <li>Home</li>
-                                <li>projects</li>
-                                <li>contact us</li>
-                                <li>about us</li>
+                                <Link activeClass="active" to="Home" spy={true} smooth={true}>
+                                    <li>Home</li>
+                                </Link>
+                                <Link activeClass="active" to="Projects" spy={true} smooth={true}>
+                                    <li>projects</li>
+                                </Link>
+                                <Link activeClass="active" to="Contact us" spy={true} smooth={true}>
+                                    <li>contact us</li>
+                                </Link>
+                                <Link activeClass="active" to="About us" spy={true} smooth={true}>
+                                    <li>About us</li>
+                                </Link>
         
                                 <button onClick={() => setOpenModal(true)}>request service</button>
-                                <Popup1 open={openModal} onClose={() => setOpenModal(false)}/>
                             </ul>
 
-                            {/* <div className="btn1">
-                                
-                            </div> */}
+                            <Popup1 open={openModal} onClose={() => setOpenModal(false)}/>
                         </div>
 
                         <div
@@ -59,7 +65,7 @@ import { UilTimesCircle } from '@iconscout/react-unicons';
                 </nav>
 
                 {/* Brief intro on what the company is about  */}
-                <div className="nav-text">
+                <div className="nav-text" id="Home">
                     <div className="text">
                         <div className="text-about">
                             <span>"Making both electrical and solar services more accessible to all" </span>

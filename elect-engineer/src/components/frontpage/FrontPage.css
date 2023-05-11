@@ -19,7 +19,7 @@ nav {
     align-items: center;
 }
 
-.links > li {
+.links {
     font-family: 'Clash Display', sans-serif;
     list-style: none;
     font-size: 20px;
@@ -27,6 +27,7 @@ nav {
     height: 50px;
     color: bisque;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .links {
@@ -131,7 +132,7 @@ nav {
     .links {
         display: flex;
         /* flex-direction: column; */
-        gap: 1px;
+        gap: 10px;
     }
 
     .nav-text {
@@ -180,14 +181,15 @@ nav {
         list-style: none;
         background: #FFFFFF;
         right: 12px;
-        top: 19px;
+        top: 15px;
         width: 30%;
-        height: 45%;
+        height: 38%;
     }
 
     .links-mobile > ul >li {
         font-size: 20px;
         padding: 20px;
+        
     }
 
     .mobile-menu-icon {
@@ -197,7 +199,8 @@ nav {
         background: #FFFFFF;
         top: 35px;
         right: 15px;
-        z-index: 9;
+        cursor: pointer;
+        /* z-index: 9; */
         /* width: 58px;
         height: 30px; */
         /* border: none; */
@@ -241,20 +244,20 @@ nav {
 
     .links-mobile > ul {
         width: 30%;
-        height: 55%;
+        height: 35%;
         z-index: 9;
     }
 
-    .links-mobile > ul >li {
+    .links-mobile > ul > li {
         font-size: 16px;
         padding: 20px;
         width: 100px;
-        transform: translateX(-2rem);
+        /* transform: translateX(-2.5rem); */
     }
 
     .links > button {
         font-size: 16px;
         width: 127px;
-        transform: translateX(-2rem);
+        transform: translateX(-1.5rem);
     }
 }
