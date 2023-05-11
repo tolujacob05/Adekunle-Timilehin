@@ -11,7 +11,7 @@ import { UilCheck } from '@iconscout/react-unicons'
 const About = () => {
     return (
         <>
-            <section className="about-cont">
+            <section className="about-cont" id="About us">
                 <div className="about-content">
                     <div className="abt-vector">
                         <div className="abt-img1">
