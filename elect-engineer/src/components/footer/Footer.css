@@ -1,6 +1,7 @@
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
     background: #0D1C1C;
     align-items: center;
     padding: 2rem;
@@ -91,4 +92,29 @@ footer {
     font-size: 16px;
     font-family: 'Cabinet Grotesk', sans-serif;
     color: aliceblue;
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 5rem;
+    }
+
+    /* .footer-contact > span {
+        font-size: 20px;
+    } */
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        display: flex;
+        gap: 2rem;
+        padding: 5rem;
+    }
+
+    /* .footer-contact > span {
+        font-size: 20px;
+    } */
 }
