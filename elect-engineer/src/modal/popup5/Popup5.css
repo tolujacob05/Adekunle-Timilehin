@@ -1,0 +1,275 @@
+.pop5 {
+    background-color: bisque;
+    position: fixed;
+    width: 100%;
+    height: 60rem;
+    z-index: 9;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* transform: translateX(70%); */
+    top: 0px;
+}
+
+.pop5 > span {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    color: red;
+    cursor: pointer;
+    font-family: 'Sharpie', sans-serif;
+}
+
+.pop5-cont {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    align-items: center;
+}
+
+.pop5-txt {
+    /* width: 100%; */
+    display: grid;
+}
+
+.pop5-txt > h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000000;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.pop5-txt > span:nth-of-type(1) {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    /* line-height: 25px; */
+}
+
+.pop5-txt > span:nth-of-type(2) {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    /* line-height: 25px; */
+}
+
+.pop5-form {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center;   */
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+form > span {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    text-align: left;
+    color: #000000;
+}
+
+form > input {
+    height: 30px;
+    border-radius: 10px;
+    background: #6ACFC7;
+}
+
+.option {
+    height: 30px;
+    border-radius: 10px;
+    background: #6ACFC7;
+}
+
+.option{
+    font-weight: 100;
+}
+
+form > textarea {
+    height: 50px;
+    border-radius: 10px;
+    background: #6ACFC7;
+}
+
+.pop5-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pop5-dial {
+    display: flex;
+    flex-direction: column;
+}
+
+.pop5-dial > p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: grey;
+    opacity: .5;
+}
+
+.pop5-dial > span:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 500px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #000000;
+}
+
+.pop5-dial > span:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 500px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #000000;
+}
+
+.pop5-address > p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: grey;
+    opacity: .5;
+}
+
+.pop5-address > span {
+    font-size: 16px;
+    font-weight: 500px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #000000;
+}
+
+.btn7 {
+    position: absolute;
+    bottom: 11rem;
+    right: 12rem;
+}
+
+.btn7 > button {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background: tomato;
+    border: 1px solid tomato;
+}
+
+@media screen and (max-width: 1200px) {
+    /* .pop5 {
+        bottom: 130px;
+    } */
+
+    .pop5-cont {
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .pop5-txt > h1 {
+        font-size: 1.5rem;
+    }
+
+    .pop5-txt > span:nth-of-type(1) {
+        font-size: 14px;
+    }
+    
+    .pop5-txt > span:nth-of-type(2) {
+        font-size: 14px;
+    }
+
+    .btn7 {
+        position: absolute;
+        bottom: 14.5rem;
+        right: -2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pop5-cont {
+        padding: 20px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pop5-logo {
+        position: absolute;
+        transform: scale(0.8);
+        top: 1rem;
+        right: -8.5rem;
+    }
+
+    form {
+        display: grid;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form > input {
+        width: 10rem;
+    }
+    
+    .option {
+        width: 10rem
+    }
+    
+    form > textarea {
+        width: 10rem
+    }
+
+    form > span {
+        font-size: 16px;
+    }
+
+    .pop5-form {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .pop5-txt > h1 {
+        font-size: 1rem;
+        width: 200px;
+    }
+    
+    .pop5-txt > span:nth-of-type(1) {
+        font-size: 14px;
+    }
+    
+    .pop5-txt > span:nth-of-type(2) {
+        font-size: 14px;
+    }
+
+    .btn7 {
+        position: absolute;
+        bottom: 18rem;
+        right: -1rem;
+    }
+    
+    .btn7 > button {
+        width: 70px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .pop5-dial {
+        transform: translateX(-5rem);
+    }
+
+    .pop5-dial > p {
+        font-size: 14px;
+    }
+    
+    .pop5-dial > span:nth-of-type(1) {
+        font-size: 14px;
+    }
+    
+    .pop5-dial > span:nth-of-type(2) {
+        font-size: 14px;
+    }
+}

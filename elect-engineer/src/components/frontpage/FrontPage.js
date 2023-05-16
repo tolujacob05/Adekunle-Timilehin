@@ -10,9 +10,12 @@ import Footer from "../footer/Footer";
 import { UilAlignCenterAlt } from '@iconscout/react-unicons';
 import { UilTimesCircle } from '@iconscout/react-unicons';
 import { Link } from "react-scroll";
+import Popup5 from "../../modal/popup5/Popup5";
 
  const FrontPage = () => {
     const [ openModal, setOpenModal ] = useState(false);
+
+    const [ openModal5, setOpenModal5 ] = useState(false);
 
     const [ isMobile, setIsMobile ] = useState(false);
 
@@ -36,16 +39,13 @@ import { Link } from "react-scroll";
                                     <li>projects</li>
                                 </Link>
                                 <Link activeClass="active" to="Contact us" spy={true} smooth={true} className="logo-link">
-                                    <li>contact us</li>
+                                    <li onClick={() => setOpenModal5(true)}>contact us</li>
                                 </Link>
                                 <Link activeClass="active" to="About us" spy={true} smooth={true} className="logo-link">
                                     <li>About us</li>
                                 </Link>
-        
                                 <button onClick={() => setOpenModal(true)}>request service</button>
                             </ul>
-
-                            
                         </div>
 
                         <div
@@ -64,6 +64,7 @@ import { Link } from "react-scroll";
                     <Popup1 open={openModal} onClose={() => setOpenModal(false)}/>
                 </nav>
 
+                <Popup5 open={openModal5} onClose={() => setOpenModal5(false)}/>
                 {/* Brief intro on what the company is about  */}
                 <div className="nav-text" id="Home">
                     <div className="text">

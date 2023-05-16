@@ -15,7 +15,7 @@ const Popup1 = ({open, onClose}) => {
         .then((result) => {
             console.log(result.text);
             setDone(true);
-            form.reset();
+            form.location.reload();
         }, (error) => {
             console.log(error.text);
         });
@@ -48,8 +48,9 @@ const Popup1 = ({open, onClose}) => {
                         <input type="text" id="name" name="user_name" placeholder="Enter your Name" />
                         <input type="email" id="email" name="user_email" placeholder="johndoe@gmail.com" />
                         <input type="phonenumber" id="number" name="user_phonenumber" placeholder="08011223344" />
-                        <textarea type="text" id="message" name="message" placeholder="I will like to hire you for a job 
-                            on electrical and solar installation in my newly acquired apartment" 
+                        <textarea type="text" id="message" name="message" placeholder="Describe the the service you want
+                            rendered e.g fixing of spoilt socket, replacement of a solar panel, replacement of electrical appliances 
+                            or accesories etc." 
                         />
                         {/* <input type="submit" value="send" className="button" /> */}
                         <div className="btn6">
