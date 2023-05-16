@@ -49,7 +49,7 @@ const About = () => {
                         <div className="abt-elect">
                             <span>about us</span>
                             <span>residential & commercial electrical services</span>
-                            <span>At <span>Timi-Electrical,</span> we are dedicated to providing high-quality electrical services to homeownwers,
+                            <span>At <span>Timmy-Electrical,</span> we are dedicated to providing high-quality electrical services to homeownwers,
                                     commercial clients, and industrial customers as we have been doing for several years. We have a team of highly
                                     highly skilled electricians who have the knowledge and expertise to handle all of your electrical needs.  
                             </span>
