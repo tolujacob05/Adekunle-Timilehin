@@ -21,7 +21,7 @@ import Popup5 from "../../modal/popup5/Popup5";
 
     return (
         <>
-            <div className="nav-container">
+            <div className="nav-container" onClick={(e) => { e.stopPropagation();}}>
                 <nav>
                     <div className="logo">
                             <Logo />

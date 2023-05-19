@@ -32,6 +32,11 @@
 .service-types {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.service-types > .types:nth-child(3) > span:nth-of-type(1) {
+    text-align: center;
 }
 
 .types {
@@ -81,6 +86,32 @@
 }
 
 @media screen and (max-width: 500px) {
+    .service-types {
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        justify-content: center;
+        align-items: center;
+        /* transform: translateX(25px); */
+        /* position: relative;
+        right: -2.5rem; */
+        grid-gap: 1rem;
+    }
+
+    .service-types > .types:nth-child(3) {
+        transform: translateX(4rem);
+        width: 150px;
+        height: 230px;
+        /* grid-row: span 2; */
+    }
+
+    .service-types > .types:nth-child(3) > img {
+        width: 150px;
+    }
+
+    .service-types > .types:nth-child(3) > span:nth-of-type(1) {
+        text-align: center;
+    }
+
     .types {
         width: 115px;
         height: 200px;

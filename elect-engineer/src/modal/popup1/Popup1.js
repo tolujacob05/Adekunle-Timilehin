@@ -15,7 +15,8 @@ const Popup1 = ({open, onClose}) => {
         .then((result) => {
             console.log(result.text);
             setDone(true);
-            form.location.reload();
+            // form.location.reload();
+            window.location.reload();
         }, (error) => {
             console.log(error.text);
         });

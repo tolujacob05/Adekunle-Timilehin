@@ -36,7 +36,7 @@ const Service = () => {
                             Solar installation
                         </span>
                         <span>
-                            We offer wiring serivices for homes, schools, offices, business organizations e.t.c.
+                            We offer solar installation for homes, schools, offices, business organizations e.t.c.
                             Just name it and we will make our services available.
                         </span>
                         {/* <span>
