@@ -39,16 +39,18 @@ const Footer = () => {
                             <UilEnvelopeAlt />
                         </span>
                         {/* <span>:</span> */}
-                        <span>timielect32@gmial.com</span>
+                        <span>
+                            timmyelectrical94@gmail.com
+                        </span>
                     </div>
                 </div>
                 <div className="footer-service">
                     <span>our services</span>
-                    <ul>
-                        <li>House wiring</li>
-                        <li>Solar installations</li>
-                        <li>Parts supply</li>
-                    </ul>
+                    <div className="footer-srv">
+                        <span>House wiring</span>
+                        <span>Solar installations</span>
+                        <span>Parts supply</span>
+                    </div>
                 </div>
             </footer>
         </>
